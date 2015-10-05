@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/data/users/kma/hphp/src'
+let g:netrw_dirhist_2='/data/users/kma/hphp'
+let g:netrw_dirhist_3='/data/users/kma'
+let g:netrw_dirhist_4='/data/users'
+let g:netrw_dirhist_5='/data'
+let g:netrw_dirhist_6='/Users/kma/Dropbox/dotfiles/.vim'
+let g:netrw_dirhist_7='/Users/kma/src/cuda-convnet/include/nvmatrix'
+let g:netrw_dirhist_8='/'
