@@ -7,6 +7,8 @@
 " The latest and greatest
 version 6.1
 
+execute pathogen#infect()
+
 syntax enable
 set notitle
 set noicon
