@@ -74,13 +74,6 @@ map <C-N> :set smartindent ai fo=croq textwidth=75<CR>
 "autocmd BufEnter *.s,*.S,*.asm,*.ASM set nocst
 "autocmd BufLeave *.s,*.S,*.asm,*.ASM set cst
 
-" Shiftwidth of 2 for the 'web productivity' languages; 4 for
-" C-derivatives.
-au BufEnter *.php,*.phpt,*.js set shiftwidth=2
-au BufLeave *.php,*.phpt,*.js set shiftwidth=4
-au BufEnter *.java,*.c,*.cpp,*.C,*.h,*.H set shiftwidth=2
-au BufLeave *.java,*.c,*.cpp,*.C,*.h,*.H set shiftwidth=4
-
 au BufRead,BufNewFile *.cpp,*.h,*.C,*.cc,*.hpp,$.cuh set syntax=cpp11
 
 set cst
