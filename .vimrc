@@ -22,7 +22,7 @@ set t_Co=256
 set nomodeline          " ignore modeline directives (more secure)
 set textwidth=75        " wrap at 75 cols
 set expandtab           " tabs are spaces
-set shiftwidth=2        " facebook coding conventions
+set shiftwidth=4        " saner defaults
 set smartindent         " nice, but makes pasting hard; see <C-I>, <C-N>
 set ai                  " see smartindent
 set ic                  " case-insensitive ...
