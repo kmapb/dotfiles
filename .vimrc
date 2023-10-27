@@ -5,7 +5,7 @@
 "
 
 " The latest and greatest
-version 6.1
+version 8.1
 
 execute pathogen#infect()
 

@@ -1,0 +1,8 @@
+[user]
+	email = kma@pebblebed.com
+	name = Keith Adams
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
