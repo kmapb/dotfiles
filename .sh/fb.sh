@@ -1,23 +1,11 @@
-function dev {
-   n=`perl -e 'printf("%03d\n", '$1');'` 
-   ssh kma@devrs${n}.snc1.facebook.com
-}
-
 # fb id
 export FBID=530929372
 
-if [ -f /home/engshare/svnroot/admin/scripts/master.bashrc ]; then
-  . /home/engshare/svnroot/admin/scripts/master.bashrc
-fi
 alias ls="ls -F"
 
 function srcgrep {
    find . -iname \*.js -o -iname \*.php -o -iname \*.phpt \
           -o -iname \*.h -o -iname \*.c -o -iname \*.cpp | xargs egrep "$@"
-}
-
-function cdmc {
-    cd ~/src/memcached-fb
 }
 
 function pypath {
@@ -48,22 +36,12 @@ export LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64/server
 export HIVESITE=silver
 PATH=~/bin/sh:~/bin/$(uname -p):$PATH
 
-# Go stuff
-export GOROOT=$HOME/go
-export GOARCH=amd64
-export GOOS=linux
-
-# some smc shortcuts
-wc_nsleaf01=search.snc1.nsleaf.people01
-wc_nsleaf02=search.snc1.nsleaf.people02
-wc_nsleaf03=search.snc1.nsleaf.people03
-
 # Linux. And C++.
 export GLIBCXX_FORCE_NEW=1
 
 function setprompt() {
-  d=$(basename $WS_HOME)
-  PS1="($HOSTNAME:$d:$HPBLD:\W)\$ "
+  PS1="($HOSTNAME:\W)\$ "
+  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
   export PS1
 }
 
