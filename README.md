@@ -1,1 +1,1 @@
-```eval $(./install.sh)```
+```./install.sh | sh```
