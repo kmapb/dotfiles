@@ -1,0 +1,1 @@
+```eval $(./install.sh)```
